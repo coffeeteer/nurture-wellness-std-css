@@ -24,14 +24,27 @@
     <nav>
       <ul class="menu">
         <li class="logo title">
-            <img src="https://img.icons8.com/ios-filled/50/000000/lotus.png" />
-            <span >Nurture Wellness Studio</span> 
+          <img src="https://img.icons8.com/ios-filled/50/000000/lotus.png" />
+          <span>Nurture Wellness Studio</span>
         </li>
-        <li class="item"><router-link to="/">Home</router-link></li>
-        <li class="item"><router-link to="/massage">Massage</router-link></li>
-        <li class="item"><router-link to="/yoga">Yoga</router-link></li>
-        <li class="item"><router-link to="/acupuncture">Acupuncture</router-link></li>
-        <li class="item"><router-link to="/contact">Contact</router-link></li>
+        <li class="item">
+          <router-link class="vue-anchor" to="/">Home</router-link>
+        </li>
+        <li class="item">
+          <router-link class="vue-anchor" to="/massage">Massage</router-link>
+        </li>
+        <li class="item">
+          <router-link class="vue-anchor" to="/yoga">Yoga</router-link>
+        </li>
+        <li class="item">
+          <router-link class="vue-anchor" to="/acupuncture">Acupuncture</router-link>
+        </li>
+        <li class="item">
+          <router-link class="vue-anchor" to="/contact">Contact</router-link>
+        </li>
+        <li class="toggle">
+          <span class="bars"></span>
+        </li>
       </ul>
     </nav>
   </div>
@@ -52,21 +65,27 @@
 }
 
 .nurture-title {
-    font-size: 4em;
+  font-size: 3rem;
 }
 
 .business-div {
   display: flex;
 }
 
+.business-info ul {
+  text-align: right;
+  font-size: 0.9rem;
+}
+
 .title {
-    font-family: 'Alice', serif; 
+  font-family: "Alice", serif;
 }
 
 nav {
   background-color: #eee;
-  padding: 5px 20px;
-  margin-left: -20px;
+  padding: 0.25rem 1rem;
+  margin-left: -1rem;
+  z-index: 10;
 }
 
 .menu {
@@ -86,5 +105,78 @@ li {
 }
 .menu li {
   justify-self: space-between;
+}
+
+li .vue-anchor {
+  text-decoration: none;
+}
+
+.toggle {
+  display: hidden;
+}
+
+@media screen and (max-width: 1000px) {
+  .nurture-title {
+    font-size: 2rem;
+  }
+
+  .business-info ul li {
+    font-size: 0.6rem;
+  }
+
+  li .vue-anchor {
+    font-size: .7rem;
+  }
+}
+
+@media screen and (max-width: 750px) {
+  nav {
+    position: relative;
+  }
+
+  .menu  { 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .menu .logo .title {
+    position: relative;
+    right: 20px;
+  }
+
+  .menu .toggle {
+    display: inline;
+    position: absolute; 
+    right: 1rem;
+    top: .4rem;
+  }
+
+  .bars {
+    background-color: #999;
+    display: inline-block;
+    height: 0.2rem;
+    position: relative;
+    width: 1rem;
+  }
+
+  .bars::before,
+  .bars::after {
+    background-color: #999;
+    content: "";
+    display: inline-block;
+    height: 0.2rem;
+    width: 0.9rem;
+    position: absolute;
+  }
+
+  .bars::before {
+    top: 0.4rem;
+  }
+
+  .bars::after {
+    bottom: 0.4rem;
+  }
+
 }
 </style>
