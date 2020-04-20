@@ -109,6 +109,21 @@ li {
 
 li .vue-anchor {
   text-decoration: none;
+  padding: .3rem;
+}
+
+li .vue-anchor:hover {
+  background-color: black;
+  color: white;
+  text-shadow: 1px 1px 2px white; 
+  border: solid 1px transparent;
+  border-radius: 25px;
+}
+
+li .vue-anchor:active {
+  background-color: #292222;
+  color: #ccc;
+  text-shadow: 1px 1px 3px #eee; 
 }
 
 .toggle {
@@ -140,9 +155,14 @@ li .vue-anchor {
     align-items: center;
   }
 
-  .menu .logo .title {
-    position: relative;
-    right: 20px;
+  .menu .logo  {
+    position: absolute;
+    left: 1.2rem;
+    top: .1rem;
+  }
+
+  .menu li:nth-child(2) {
+    margin-top: 1.4rem;
   }
 
   .menu .toggle {
