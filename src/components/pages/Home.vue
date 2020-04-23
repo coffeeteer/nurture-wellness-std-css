@@ -10,7 +10,9 @@
         <h3>
           <img src="https://img.icons8.com/ios-glyphs/30/000000/group.png" />
         </h3>
-        <router-link class="vue-anchor" to="/contact"><h3>Meet Our Healing Practitioners</h3></router-link>
+        <router-link class="vue-anchor" to="/contact">
+          <h3>Meet Our Healing Practitioners</h3>
+        </router-link>
       </div>
     </div>
     <div class="home-info-container">
@@ -36,24 +38,60 @@
             <p
               class="card-paragraph"
             >Massage Therapist, Jackie Beecher offers a variety of bodywork styles to nurture the body.</p>
-            <a href="#">LEARN MORE</a>
+
+            <router-link class="card-link" to="/massage">LEARN MORE</router-link>
           </div>
           <div class="service-card">
             <img class="img-2" src="../../assets/yoga-group.jpg" alt />
             <p
               class="card-paragraph"
             >Jackie Beecher & Fred Crawford lead group and private Hatha Yoga for all abilities.</p>
-            <a href="#">LEARN MORE</a>
+
+            <router-link class="card-link" to="/yoga">LEARN MORE</router-link>
           </div>
           <div class="service-card">
             <img class="img-3" src="../../assets/acupuncture-crop.jpg" alt />
-            <p class="card-paragraph">Chris Bassett, L.Ac., brings his expertise in acupuncture, and Chinese herbs to the Nurture Wellness Studio.</p>
-            <a href="#">LEARN MORE</a>
+            <p
+              class="card-paragraph"
+            >Chris Bassett, L.Ac., brings his expertise in acupuncture, and Chinese herbs to the Nurture Wellness Studio.</p>
+
+            <router-link class="card-link" to="/acupuncture">LEARN MORE</router-link>
           </div>
         </div>
       </div>
     </div>
     <!-- end of Services Container -->
+
+    <hr />
+
+    <div class="nurturer-container">
+      <div class="card-container">
+        <div class="nurturer-card">
+          <div class="card-img"></div>
+          <img class="img-4" src="../../assets/jackie-beecher.jpg" alt="Jackie Beecher" />
+          <h3>Jackie Beecher</h3>
+          <p
+            class="card-paragraph"
+          >Jackie has extensive experience as a bodywork therapist, yoga practitioner and teacher.</p>
+
+          <a
+            href="http://jackiebeechermassage.blogspot.com/p/jackie-beecher-massage.html"
+            target="_blank"
+          >LEARN MORE</a>
+        </div>
+
+        <div class="nurturer-card">
+          <div class="card-img"></div>
+          <img class="img-5" src="../../assets/chris-basset-crop.jpg" alt="Chris Basset" />
+          <h3>Chris Bassett, L.Ac.</h3>
+          <p
+            class="card-paragraph"
+          >Chris brings his expertise in acupuncture, and Chinese herbs to the Nurture Wellness Studio.</p>
+
+          <router-link to="/acupuncture">LEARN MORE</router-link>
+        </div>
+      </div>
+    </div>
   </div>
 </template>
 
@@ -95,7 +133,7 @@
 }
 
 .vue-anchor {
-    text-decoration: none;
+  text-decoration: none;
 }
 
 .nurturing-panel {
@@ -120,11 +158,11 @@
 }
 
 .nurturing-btn:hover {
-    background-color: #beeb5e;
+  background-color: #beeb5e;
 }
 
 .nurturing-btn:active {
-    background-color: #729b19;
+  background-color: #729b19;
 }
 
 .home-info-container {
@@ -166,31 +204,61 @@ p {
 }
 
 .wellness-title {
-    text-align: center;
+  text-align: center;
 }
 
 .wellness-cards {
-    display: flex;
-    justify-content: space-around;
+  display: flex;
+  justify-content: space-around;
 }
 
 .service-card {
-    width: 350px;
-    flex-wrap: wrap;
-    background-color: #ccc;
-    padding: 10px;
+  width: 350px;
+  flex-wrap: wrap;
+  background-color: #ccc;
+  padding: 10px;
 }
 
 .service-card img {
-    margin: 8%;
-   
+  margin: 8%;
 }
 
-.img-1, .img-2, .img-3 { 
-    object-fit: cover;
-    height: 182px;
-    width: 247px;
-    position: relative;
-    left: 4%;
+.img-1,
+.img-2,
+.img-3 {
+  object-fit: cover;
+  height: 182px;
+  width: 247px;
+  position: relative;
+  left: 4%;
+}
+
+.service-card p {
+  font-size: 0.9rem;
+}
+
+.nurturer-container {
+  position: relative;
+  top: 850px;
+}
+
+.card-container {
+  display: flex;
+  justify-content: space-evenly;
+  
+}
+
+.nurturer-card {
+  width: 450px;
+  background-color: #ccc;
+  align-self:center
+}
+
+.img-4,
+.img-5 {
+  height: 80%;
+  width: 165px;
+  overflow: hidden;
+  object-fit: cover;
 }
 </style>
