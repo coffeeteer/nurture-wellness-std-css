@@ -80,32 +80,36 @@
     <!-- background panel end -->
 
     <!-- Meet our practioners -->
-    <h3>Meet Our Healing Practioners</h3>
+    <h3 class="healing-prac-h3 green">Meet Our Healing Practioners</h3>
     <div class="healing-practioners">
-
-      <div class="card massage"> <!-- Jackie Beecher -->
+      <div class="practioner-card">
+        <!-- Jackie Beecher -->
         <div class="jackie-beecher-img"></div>
-        
+
         <h4>Jackie Beecher</h4>
         <p>
           Massage Therapist,
           <span class="bold">Jackie Beecher</span> has extensive experience as a bodywork therapist, yoga practitioner and teacher.
         </p>
-        <router-link class="card-link" href="http://jackiebeechermassage.blogspot.com/p/jackie-beecher-massage.html" target="_blank">LEARN MORE</router-link>
+        <a
+          class="card-link"
+          href="http://jackiebeechermassage.blogspot.com/p/jackie-beecher-massage.html"
+          target="_blank"
+        >LEARN MORE</a>
       </div>
 
-      <div class="card yoga"> <!-- Chris Bassett -->
-        <div class="yoga-img"></div>
+      <div class="practioner-card">
+        <!-- Chris Bassett -->
+        <div class="chris-bassett-img"></div>
         <!-- <img src="../../assets/yoga-group.jpg" class="yoga-image" alt=""> -->
-        <h4>Yoga</h4>
+        <h4>Chris Bassett, L.Ac.</h4>
         <p>
-          <span class="bold">Jackie Beecher & Fred Crawford</span> lead group and private Hatha Yoga for all abilities.
+          <span class="bold">Chris</span> brings his expertise in acupuncture, and Chinese herbs to the Nurture Wellness Studio.
         </p>
         <router-link class="card-link" to="/yoga">LEARN MORE</router-link>
       </div>
     </div>
 
-    
     <!-- Meet our practioners end -->
   </div>
 </template>
@@ -195,11 +199,11 @@
 
 .card {
   width: 200px;
-  border: 1px solid black;
+  
   height: 500px;
   width: 340px;
   overflow: unset;
-  background-color: #eee;
+  
 }
 
 /* .yoga {
@@ -259,15 +263,14 @@
   width: 100%;
   /* background-color: #eee; */
   /* background-image: url("../../assets/random-acupuncture.jpg"), url("../../assets/random-yoga-meditation.jpg"); */
-  background: 
-    linear-gradient(
+  background: linear-gradient(
       rgba(204, 204, 204, 0.6),
-      rgba(238,238,238, .4)
+      rgba(238, 238, 238, 0.4)
     ),
     url("../../assets/random-yoga-meditation.jpg") left top no-repeat,
-    url("../../assets/random-acupuncture.jpg") right top no-repeat, 
+    url("../../assets/random-acupuncture.jpg") right top no-repeat,
     url("../../assets/random-massage.jpg") left top repeat;
-    background-size: 33%, 33%, 33%;
+  background-size: 33%, 33%, 33%;
 }
 
 .nurture-experience-blurb {
@@ -279,12 +282,12 @@
 }
 
 .nurture-experience-blurb:hover {
-  background-color: rgba(75, 69, 69, .2);
+  background-color: rgba(75, 69, 69, 0.2);
   border: #ccc 3px solid;
 }
 
 .nurture-experience-blurb:active {
-  background-color: rgba(75, 75, 75, .5);
+  background-color: rgba(75, 75, 75, 0.5);
   border: #eee 3px solid;
 }
 
@@ -296,7 +299,7 @@
 
 .nurture-experience-blurb h3 {
   font-size: 1.5rem;
-  font-family: 'Alice', sans-serif;
+  font-family: "Alice", sans-serif;
 }
 
 .nurture-experience-blurb p {
@@ -305,8 +308,55 @@
 }
 
 .green {
-  color: green;
+  color: #9BC444;
 }
+
+.healing-prac-h3 {
+  text-align: center;
+  font-family: 'Alice', sans-serif;
+  font-size: 2rem;
+  margin: 1rem;
+}
+
+.healing-practioners {
+  display: flex;
+  justify-content: space-evenly;
+  text-align: center;
+  margin-top: 20px;
+}
+
+.practioner-card {
+  width: 200px;
+  border: 1px solid black;
+  height: 500px;
+  width: 340px;
+  overflow: unset;
+  background-color: #eee;
+}
+
+.practioner-card >>> {
+  letter-spacing: 0.2rem;
+  padding: 0.3rem;
+}
+
+.jackie-beecher-img {
+  background: url("../../assets/Jackie1.jpg") no-repeat;
+}
+
+.chris-bassett-img {
+  background-image: url("../../assets/chris-basset-crop.jpg");
+}
+
+div.jackie-beecher-img,
+div.chris-bassett-img {
+  margin: auto;
+  height: 250px;
+  width: 225px;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+
 </style>
  
 <script>
