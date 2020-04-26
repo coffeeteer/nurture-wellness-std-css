@@ -17,7 +17,7 @@
       </div>
     </div>
     <!-- Panel & large button end -->
-    
+
     <!-- Info Panel -->
     <div class="nurture-wellness-home-panel">
       <div class="panel-div">
@@ -30,37 +30,83 @@
     </div>
     <!-- Info Panel End -->
 
-    <h2>Wellness Services</h2>
+    <h2 class="h1-title">Wellness Services</h2>
     <!-- cards -->
     <div class="cards-container">
-      
       <!-- massage card -->
       <div class="card massage">
         <div class="massage-img"></div>
+        <!-- <img src="../../assets/deepmassage-crop.jpg" class="massage-image" alt=""> -->
         <h4>Massage</h4>
-        <p>Massage Therapist, <span class="bold">Jackie Beecher</span> offers a variety of bodywork styles to nurture the body.</p>
+        <p>
+          Massage Therapist,
+          <span class="bold">Jackie Beecher</span> offers a variety of bodywork styles to nurture the body.
+        </p>
         <router-link class="card-link" to="/massage">LEARN MORE</router-link>
       </div>
       <!-- massage card end -->
       <!-- yoga card -->
       <div class="card yoga">
         <div class="yoga-img"></div>
+        <!-- <img src="../../assets/yoga-group.jpg" class="yoga-image" alt=""> -->
         <h4>Yoga</h4>
-        <p><span class="bold">Jackie Beecher & Fred Crawford</span> lead group and private Hatha Yoga for all abilities.</p>
+        <p>
+          <span class="bold">Jackie Beecher & Fred Crawford</span> lead group and private Hatha Yoga for all abilities.
+        </p>
         <router-link class="card-link" to="/yoga">LEARN MORE</router-link>
       </div>
       <!-- yoga card end -->
       <!-- Acupuncture  -->
       <div class="card acupuncture">
         <div class="acu-img"></div>
-          <h4>Acupuncture</h4>
-          <p><span class="bold">Chris Bassett</span>, L.Ac., brings his expertise in acupuncture, and Chinese herbs to the Nurture Wellness Studio.</p>
-          <router-link class="card-link" to="/acupuncture">LEARN MORE</router-link>
-        
+        <!-- <img src="../../assets/chris-basset-crop.jpg" class="acupuncture-image" alt=""> -->
+        <h4>Acupuncture</h4>
+        <p>
+          <span class="bold">Chris Bassett</span>, L.Ac., brings his expertise in acupuncture, and Chinese herbs to the Nurture Wellness Studio.
+        </p>
+        <router-link class="card-link" to="/acupuncture">LEARN MORE</router-link>
       </div>
       <!-- Acupuncture end -->
     </div>
     <!-- cards end -->
+    <!-- background panel -->
+    <div class="background-show">
+      <div class="nurture-experience-blurb">
+        <h3>NURTURE WELLNESS TODAY</h3>
+        <p class="green">Experience what Nurture Wellness Studio has to Offer</p>
+        <p>Yoga, Massage Therapy, and Acupuncture</p>
+      </div>
+    </div>
+    <!-- background panel end -->
+
+    <!-- Meet our practioners -->
+    <h3>Meet Our Healing Practioners</h3>
+    <div class="healing-practioners">
+
+      <div class="card massage"> <!-- Jackie Beecher -->
+        <div class="jackie-beecher-img"></div>
+        
+        <h4>Jackie Beecher</h4>
+        <p>
+          Massage Therapist,
+          <span class="bold">Jackie Beecher</span> has extensive experience as a bodywork therapist, yoga practitioner and teacher.
+        </p>
+        <router-link class="card-link" href="http://jackiebeechermassage.blogspot.com/p/jackie-beecher-massage.html" target="_blank">LEARN MORE</router-link>
+      </div>
+
+      <div class="card yoga"> <!-- Chris Bassett -->
+        <div class="yoga-img"></div>
+        <!-- <img src="../../assets/yoga-group.jpg" class="yoga-image" alt=""> -->
+        <h4>Yoga</h4>
+        <p>
+          <span class="bold">Jackie Beecher & Fred Crawford</span> lead group and private Hatha Yoga for all abilities.
+        </p>
+        <router-link class="card-link" to="/yoga">LEARN MORE</router-link>
+      </div>
+    </div>
+
+    
+    <!-- Meet our practioners end -->
   </div>
 </template>
 
@@ -131,20 +177,49 @@
 .panel-div p {
   font-size: 1.2rem;
 }
+
+.h1-title {
+  text-align: center;
+  padding-bottom: 1rem;
+  font-family: "Alice", sans-serif;
+  font-size: 1.7rem;
+}
+
 .cards-container {
   display: flex;
   justify-content: space-evenly;
-  width: 70%;
+  /* height: 450px; */
+  width: 85%;
   margin: auto;
 }
 
 .card {
   width: 200px;
+  border: 1px solid black;
+  height: 500px;
+  width: 340px;
+  overflow: unset;
+  background-color: #eee;
 }
+
+/* .yoga {
+  border-right: 3px solid black;
+  border-left: 3px solid black;
+} */
 
 .card >>> {
   text-align: center;
   padding: 2px;
+}
+
+.card p,
+.card h4 {
+  letter-spacing: 0.2rem;
+  padding: 0.3rem;
+}
+
+.card p {
+  font-size: 0.8rem;
 }
 
 .massage-img {
@@ -152,23 +227,85 @@
 }
 
 .yoga-img {
-  background-image: url("../../assets/yoga-group.jpg")
+  background-image: url("../../assets/yoga-group.jpg");
 }
 
 .acu-img {
-  background-image: url("../../assets/chris-basset-crop.jpg")
+  background-image: url("../../assets/chris-basset-crop.jpg");
 }
 
-.massage-img, .yoga-img, .acu-img {
+.massage-img,
+.yoga-img,
+.acu-img {
   background-repeat: no-repeat;
   background-position: 0 50%;
-  height: 100%;
-  background-size: contain;
+  height: 250px;
+  width: 250px;
+  background-size: cover;
   margin: auto;
+  margin-top: 1.5rem;
 }
 
 .bold {
   font-weight: bold;
+}
+
+.background-show {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  height: 500px;
+  width: 100%;
+  /* background-color: #eee; */
+  /* background-image: url("../../assets/random-acupuncture.jpg"), url("../../assets/random-yoga-meditation.jpg"); */
+  background: 
+    linear-gradient(
+      rgba(204, 204, 204, 0.6),
+      rgba(238,238,238, .4)
+    ),
+    url("../../assets/random-yoga-meditation.jpg") left top no-repeat,
+    url("../../assets/random-acupuncture.jpg") right top no-repeat, 
+    url("../../assets/random-massage.jpg") left top repeat;
+    background-size: 33%, 33%, 33%;
+}
+
+.nurture-experience-blurb {
+  height: 310px;
+  width: 750px;
+  border: white solid 3px;
+  vertical-align: middle;
+  background-color: transparent;
+}
+
+.nurture-experience-blurb:hover {
+  background-color: rgba(75, 69, 69, .2);
+  border: #ccc 3px solid;
+}
+
+.nurture-experience-blurb:active {
+  background-color: rgba(75, 75, 75, .5);
+  border: #eee 3px solid;
+}
+
+.nurture-experience-blurb h3,
+.nurture-experience-blurb p {
+  padding-top: 1.4rem;
+  margin: 1rem;
+}
+
+.nurture-experience-blurb h3 {
+  font-size: 1.5rem;
+  font-family: 'Alice', sans-serif;
+}
+
+.nurture-experience-blurb p {
+  font-size: 1.1rem;
+  font-weight: bold;
+}
+
+.green {
+  color: green;
 }
 </style>
  
