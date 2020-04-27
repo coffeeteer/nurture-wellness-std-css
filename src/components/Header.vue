@@ -21,7 +21,7 @@
         </div>
       </div>
     </div>
-    <nav>
+    <nav >
       <ul class="menu">
         <li class="logo title">
           <img src="https://img.icons8.com/ios-filled/50/000000/lotus.png" />
@@ -43,7 +43,9 @@
           <router-link class="vue-anchor" to="/contact">Contact</router-link>
         </li>
         <li class="toggle">
-          <span class="bars"></span>
+          <label for="menu-toggle" class="for-toggle"><span class="bars"></span></label>
+          <input type="checkbox" id="menu-toggle">
+          
         </li>
       </ul>
     </nav>
@@ -51,6 +53,13 @@
 </template>
 
 <script>
+export default {
+  data: function() {
+    return {
+      nurtureToggle: false
+    };
+  }
+};
 </script>
 
 <style scoped>
@@ -109,13 +118,13 @@ li {
 
 li .vue-anchor {
   text-decoration: none;
-  padding: .3rem;
+  padding: 0.3rem;
 }
 
 li .vue-anchor:hover {
   background-color: black;
   color: white;
-  text-shadow: 1px 1px 2px white; 
+  text-shadow: 1px 1px 2px white;
   border: solid 1px transparent;
   border-radius: 25px;
 }
@@ -123,11 +132,11 @@ li .vue-anchor:hover {
 li .vue-anchor:active {
   background-color: #292222;
   color: #ccc;
-  text-shadow: 1px 1px 3px #eee; 
+  text-shadow: 1px 1px 3px #eee;
 }
 
-.toggle {
-  display: hidden;
+.toggle, input#menu-toggle {
+  display: none;
 }
 
 @media screen and (max-width: 1000px) {
@@ -140,7 +149,7 @@ li .vue-anchor:active {
   }
 
   li .vue-anchor {
-    font-size: .7rem;
+    font-size: 0.7rem;
   }
 }
 
@@ -149,27 +158,41 @@ li .vue-anchor:active {
     position: relative;
   }
 
-  .menu  { 
+  .menu {
     display: flex;
     flex-direction: column;
     align-items: center;
+    height: 40px;
   }
 
-  .menu .logo  {
+  .menu .logo {
     position: absolute;
     left: 1.2rem;
-    top: .1rem;
+    top: 0.1rem;
   }
 
   .menu li:nth-child(2) {
     margin-top: 1.4rem;
   }
 
+  .item {
+    display: none;
+  }
+
+  .item:checked + .menu {
+    display: flex;
+    flex-direction: column;
+  }
+
   .menu .toggle {
     display: inline;
-    position: absolute; 
+    position: absolute;
     right: 1rem;
-    top: .4rem;
+    top: 0.4rem;
+  }
+
+   label.for-toggle {
+    cursor: pointer;
   }
 
   .bars {
@@ -197,6 +220,5 @@ li .vue-anchor:active {
   .bars::after {
     bottom: 0.4rem;
   }
-
 }
 </style>
