@@ -299,10 +299,6 @@
   font-weight: bold;
 }
 
-.green {
-  color: #9BC444;
-}
-
 .healing-prac-h3 {
   text-align: center;
   font-family: 'Alice', sans-serif;

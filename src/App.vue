@@ -25,4 +25,9 @@ export default {
   font-size: 20px;
   font-family: 'Montserrat', sans-serif;
 }
+
+
+.green {
+  color: #9BC444;
+}
 </style>
