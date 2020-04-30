@@ -343,8 +343,6 @@ div.chris-bassett-img {
   background-repeat: no-repeat;
   background-size: cover;
 }
-
-
 </style>
  
 <script>

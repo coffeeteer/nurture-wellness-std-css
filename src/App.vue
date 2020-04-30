@@ -26,8 +26,11 @@ export default {
   font-family: 'Montserrat', sans-serif;
 }
 
-
 .green {
   color: #9BC444;
+}
+
+.bold {
+  font-weight: bold;
 }
 </style>
