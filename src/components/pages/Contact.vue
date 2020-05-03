@@ -12,16 +12,67 @@
         </div>
       </div>
     </div>
-    <iframe
-      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3251.177801845845!2d-83.44843168479115!3d35.42562528025471!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8859485c305f9ca7%3A0x711cc259c05b3bf1!2s50%20Academy%20St%2C%20Bryson%20City%2C%20NC%2028713!5e0!3m2!1sen!2sus!4v1588385622513!5m2!1sen!2sus"
-      width="600"
-      height="450"
-      frameborder="0"
-      style="border:0;"
-      allowfullscreen
-      aria-hidden="false"
-      tabindex="0"
-    ></iframe>
+    <div class="container">
+      <div class="info-div">
+        <img src="https://img.icons8.com/ios-filled/50/000000/lotus.png" />
+        <address>
+          <span>50 Academy Street</span>
+          <br />
+          <span>Bryson City, NC</span>
+          <br />
+          <span>
+            Phone:
+            <a href="tel:1-828-400-9616">828-400-9616</a>
+          </span>
+          <br />
+          <span>
+            Email:
+            <a href="mailto:jackiebeecher50@gmail.com">jackiebeecher50@gmail.com</a>
+          </span>
+          <br />
+        </address>
+      </div>
+      <div class="map">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3251.177801845845!2d-83.44843168479115!3d35.42562528025471!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8859485c305f9ca7%3A0x711cc259c05b3bf1!2s50%20Academy%20St%2C%20Bryson%20City%2C%20NC%2028713!5e0!3m2!1sen!2sus!4v1588385622513!5m2!1sen!2sus"
+          width="600"
+          height="450"
+          frameborder="0"
+          style="border:0;"
+          allowfullscreen
+          aria-hidden="false"
+          tabindex="0"
+        ></iframe>
+      </div>
+    </div>
+    <div class="third-container">
+      <div class="find-us">
+        <div id="fb-root">
+          <div
+            class="fb-page"
+            data-href="https://www.facebook.com/NurtureWellnessStudio"
+            data-tabs="timeline"
+            data-width="600"
+            data-height
+            data-small-header="false"
+            data-adapt-container-width="true"
+            data-hide-cover="false"
+            data-show-facepile="true"
+          >
+            <blockquote
+              cite="https://www.facebook.com/NurtureWellnessStudio"
+              class="fb-xfbml-parse-ignore"
+            >
+              <a href="https://www.facebook.com/NurtureWellnessStudio">NurtureWellnessStudio</a>
+            </blockquote>
+          </div>
+        </div>
+        <div class="text">
+          <h3>Directions</h3>
+          <p>Directions From Hwy 74W, take exit 67 into Bryson City. Before you come to the first stop light you will be taking a right on Academy St., which is the street right after Bojangles (sometimes there is no street sign, but there IS a pointer sign to the public library). Soon after your right turn on Academy St, you'll see our Nurture Wellness sign and a stone house on your right. Park behind the building and please use the front door :)</p>
+        </div>
+      </div>
+    </div>
   </div>
 </template>
 
@@ -42,13 +93,73 @@
 }
 
 .hero-text {
-    width: 450px;
-    height: 300px;
-    border: black 2px solid;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    background-color: rgba(248,248,255, 0.3);
-    padding: 0 1.5rem;
+  width: 450px;
+  height: 300px;
+  border: black 2px solid;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: rgba(248, 248, 255, 0.3);
+  padding: 0 1.5rem;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.info-div {
+  width: 450px;
+  height: 450px;
+  background-color: #eee;
+  text-align: center;
+  padding: 5px;
+}
+
+address {
+  margin-top: 3rem;
+}
+
+address span {
+  display: flex;
+  text-align: left;
+  margin-bottom: -0.5rem;
+  margin-left: 1rem;
+}
+
+/* iframe {
+  height: 450px;
+  max-width: 1000px;
+} */
+
+.third-container {
+  
+}
+
+.find-us {
+ display: flex;
+ justify-content: center;
+ margin: 2rem;
+}
+
+.text, .fb-root {
+  margin: 0 1.1rem;
+  padding: 0 1.1rem;
+}
+
+.text {
+  width: 500px;
+}
+
+.text h3 {
+  font-family: 'Alice', sans-serif; 
+  font-size: 1.4rem;
+  padding-bottom: 2rem;
+}
+
+.text p {
+  font-size: 1.1rem;
+  letter-spacing: 2px;
 }
 </style>

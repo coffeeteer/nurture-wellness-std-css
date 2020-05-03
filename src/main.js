@@ -1,8 +1,10 @@
 import Vue from "vue";
+import VueFacebookPage from 'vue-facebook-page'
 import VueRouter from "vue-router";
 import App from "./App.vue";
 import { routes } from "./routes.js";
 
+Vue.use(VueFacebookPage)
 Vue.use(VueRouter);
 
 const router = new VueRouter({
