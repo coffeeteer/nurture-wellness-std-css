@@ -53,7 +53,7 @@
             data-href="https://www.facebook.com/NurtureWellnessStudio"
             data-tabs="timeline"
             data-width="600"
-            data-height
+            data-height="450"
             data-small-header="false"
             data-adapt-container-width="true"
             data-hide-cover="false"
@@ -72,6 +72,28 @@
           <p>Directions From Hwy 74W, take exit 67 into Bryson City. Before you come to the first stop light you will be taking a right on Academy St., which is the street right after Bojangles (sometimes there is no street sign, but there IS a pointer sign to the public library). Soon after your right turn on Academy St, you'll see our Nurture Wellness sign and a stone house on your right. Park behind the building and please use the front door :)</p>
         </div>
       </div>
+    </div>
+    <div class="contact-container">
+      <div class="wrapper">
+      <form action class="form-area">
+        <div class="msg-area">
+          <label for="msg">Message</label>
+          <textarea id="msg" cols="30" rows="10"></textarea>
+        </div>
+        <div class="details-area">
+          <label for="name">Name</label>
+          <input type="text" name id="name" />
+
+          <label for="email">Email</label>
+          <input type="email" id="email" />
+
+          <label for="phone">Phone Number</label>
+          <input type="number" id="phone" />
+
+          <button type="submit" class="submit">Submit</button>
+        </div>
+      </form>
+    </div>
     </div>
   </div>
 </template>
@@ -128,15 +150,6 @@ address span {
   margin-left: 1rem;
 }
 
-/* iframe {
-  height: 450px;
-  max-width: 1000px;
-} */
-
-.third-container {
-  
-}
-
 .find-us {
  display: flex;
  justify-content: center;
@@ -161,5 +174,72 @@ address span {
 .text p {
   font-size: 1.1rem;
   letter-spacing: 2px;
+}
+
+.contact-container {
+  background: url('../../assets/morning-fog.jpg') center top no-repeat;
+  /* height: 100%; */
+  background-size: cover;
+}
+
+.wrapper {
+  width: 800px;
+  margin:  auto;
+  padding: 4rem 0;
+}
+
+.form-area {
+  display: flex;
+  background: rgba(238, 238, 238, 0.8);
+  border-radius: 25px;
+  padding: 1rem;
+}
+
+.msg-area {
+  display: flex;
+  flex-direction: column;
+  order: 2;
+}
+
+.msg-area > textarea {
+  flex: 1;
+  min-width: 20rem;
+  background: transparent;
+  /* color: #fff; */
+  padding: 15px;
+}
+
+.details-area {
+  flex: 1;
+  order: 1;
+  margin-right: 2rem;
+}
+
+.details-area input {
+  width: 100%;
+  background: transparent;
+  /* color: #fff; */
+  border-radius: 40px;
+}
+
+.details-area input, .details-area button {
+  padding: 1rem;
+  margin-bottom: 1rem;
+}
+
+button.submit {
+  background: #9BC444;
+  color: #fff;
+  border: 0;
+  padding: .75rem 2.5rem;
+  border-radius: 2rem;
+  font-size: .8rem;
+  text-transform: uppercase;
+}
+
+label {
+  /* color: #fff; */
+  text-transform: capitalize;
+  line-height: 2rem;
 }
 </style>
