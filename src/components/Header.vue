@@ -43,23 +43,44 @@
           <router-link class="vue-anchor" to="/contact">Contact</router-link>
         </li>
         <li class="toggle">
-          <label for="menu-toggle" class="for-toggle"><span class="bars"></span></label>
           <input type="checkbox" id="menu-toggle">
+          <label for="menu-toggle" class="for-toggle"><span class="bars"></span></label>
+          
           
         </li>
       </ul>
     </nav>
+
+    <!-- <header>
+      <a href="" class="logo">
+          <img src="https://img.icons8.com/ios-filled/50/000000/lotus.png" />
+          <span>Nurture Wellness Studio</span>
+      </a>
+      <input type="checkbox" class="menu-btn" id="menu-btn">
+      <label for="menu-btn" class="menu-icon"><span class="navicon"></span></label>
+      <ul class="menu">
+        <li class="item">
+          <router-link class="vue-anchor" to="/">Home</router-link>
+        </li>
+        <li class="item">
+          <router-link class="vue-anchor" to="/massage">Massage</router-link>
+        </li>
+        <li class="item">
+          <router-link class="vue-anchor" to="/yoga">Yoga</router-link>
+        </li>
+        <li class="item">
+          <router-link class="vue-anchor" to="/acupuncture">Acupuncture</router-link>
+        </li>
+        <li class="item">
+          <router-link class="vue-anchor" to="/contact">Contact</router-link>
+        </li>
+      </ul>
+    </header> -->
   </div>
 </template>
 
 <script>
-export default {
-  data: function() {
-    return {
-      nurtureToggle: false
-    };
-  }
-};
+
 </script>
 
 <style scoped>
@@ -88,6 +109,26 @@ export default {
 
 .title {
   font-family: "Alice", serif;
+}
+
+body {
+  margin: 0;
+  font-family: Helvetica, sans-serif;
+  background-color: #f4f4f4;
+}
+
+a {
+  color: #000;
+}
+
+/* header */
+
+.header {
+  background-color: #fff;
+  box-shadow: 1px 1px 4px 0 rgba(0,0,0,.1);
+  position: fixed;
+  width: 100%;
+  z-index: 3;
 }
 
 nav {
@@ -179,10 +220,10 @@ li .vue-anchor:active {
     display: none;
   }
 
-  .item:checked + .menu {
+  /* .item:checked + .menu {
     display: flex;
     flex-direction: column;
-  }
+  } */
 
   .menu .toggle {
     display: inline;
@@ -193,6 +234,10 @@ li .vue-anchor:active {
 
    label.for-toggle {
     cursor: pointer;
+  }
+
+  label.for-toggle:target ~ .menu{
+    max-height: 250px;
   }
 
   .bars {

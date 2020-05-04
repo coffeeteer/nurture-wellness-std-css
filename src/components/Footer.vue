@@ -1,0 +1,42 @@
+<template>
+  <div>
+    <div class="contact">
+      <div>
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+          <path
+            d="M22.675 0h-21.35c-.732 0-1.325.593-1.325 1.325v21.351c0 .731.593 1.324 1.325 1.324h11.495v-9.294h-3.128v-3.622h3.128v-2.671c0-3.1 1.893-4.788 4.659-4.788 1.325 0 2.463.099 2.795.143v3.24l-1.918.001c-1.504 0-1.795.715-1.795 1.763v2.313h3.587l-.467 3.622h-3.12v9.293h6.116c.73 0 1.323-.593 1.323-1.325v-21.35c0-.732-.593-1.325-1.325-1.325z"
+          />
+        </svg>
+      </div>
+      <div>
+        <address>
+          <ul>
+            <li>Phone: 828-400-9616</li>
+            <li>jackiebeecher50@gmail.com</li>
+            <li>50 Academy Steet</li>
+            <li>Bryson City, NC</li>
+          </ul>
+        </address>
+      </div>
+      <div>
+        <ul>
+          <li class="item">
+            <router-link class="vue-anchor" to="/massage">Massage</router-link>
+          </li>
+          <li class="item">
+            <router-link class="vue-anchor" to="/yoga">Yoga</router-link>
+          </li>
+          <li class="item">
+            <router-link class="vue-anchor" to="/acupuncture">Acupuncture</router-link>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div>
+        <h4>&copy; 2020 Nurture Wellness Studio | Bryson City, NC</h4>
+    </div>
+  </div>
+</template>
+
+<style scoped>
+</style>
