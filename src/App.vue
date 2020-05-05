@@ -35,4 +35,8 @@ export default {
 .bold {
   font-weight: bold;
 }
+
+li {
+  list-style: none;
+}
 </style>

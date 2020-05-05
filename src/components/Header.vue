@@ -150,9 +150,9 @@ nav {
   align-items: center;
 }
 
-li {
+/* li {
   list-style: none;
-}
+} */
 .menu li {
   justify-self: space-between;
 }
