@@ -142,8 +142,9 @@
     <div class="hatha-container">
       <div class="hatha-info-div">
         <h3>
-          <!-- <img src="https://img.icons8.com/ios-filled/50/000000/lotus.png" /> -->
-          <img src="../../assets/icons8-lotus-100.png" alt="">
+          <!-- <img src="../../assets/icons8-lotus-100.png" alt="">  -->
+          <!-- <font-awesome-icon icon="om" class="om"></font-awesome-icon> -->
+          <i class="fas fa-om fa-2x"></i>
         </h3>
         <h3>Hatha Yoga - Come Home To Your Body</h3>
         <p>
@@ -308,6 +309,10 @@ h3 {
   flex-direction: column;
   width: 1000px;
   margin: auto ;
+}
+
+.om{
+  font-size: 2rem;
 }
 
 .hatha-info-div >>> {
