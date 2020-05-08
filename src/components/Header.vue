@@ -28,7 +28,7 @@
           <span>Nurture Wellness Studio</span>
         </li>
         <li class="item">
-          <router-link class="vue-anchor" to="/">Home</router-link>
+          <router-link class="vue-anchor" to="/" exact>Home</router-link>
         </li>
         <li class="item">
           <router-link class="vue-anchor" to="/massage">Massage</router-link>
@@ -44,38 +44,10 @@
         </li>
         <li class="toggle">
           <input type="checkbox" id="menu-toggle">
-          <label for="menu-toggle" class="for-toggle"><span class="bars"></span></label>
-          
-          
+          <label for="menu-toggle" class="for-toggle"><span class="bars"></span></label> 
         </li>
       </ul>
     </nav>
-
-    <!-- <header>
-      <a href="" class="logo">
-          <img src="https://img.icons8.com/ios-filled/50/000000/lotus.png" />
-          <span>Nurture Wellness Studio</span>
-      </a>
-      <input type="checkbox" class="menu-btn" id="menu-btn">
-      <label for="menu-btn" class="menu-icon"><span class="navicon"></span></label>
-      <ul class="menu">
-        <li class="item">
-          <router-link class="vue-anchor" to="/">Home</router-link>
-        </li>
-        <li class="item">
-          <router-link class="vue-anchor" to="/massage">Massage</router-link>
-        </li>
-        <li class="item">
-          <router-link class="vue-anchor" to="/yoga">Yoga</router-link>
-        </li>
-        <li class="item">
-          <router-link class="vue-anchor" to="/acupuncture">Acupuncture</router-link>
-        </li>
-        <li class="item">
-          <router-link class="vue-anchor" to="/contact">Contact</router-link>
-        </li>
-      </ul>
-    </header> -->
   </div>
 </template>
 
@@ -109,6 +81,11 @@
 
 .title {
   font-family: "Alice", serif;
+}
+
+.router-link-active {
+  background-color: #404040;
+  color: #f5f5f5;
 }
 
 body {

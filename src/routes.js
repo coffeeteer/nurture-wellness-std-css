@@ -3,6 +3,7 @@ import Massage from "./components/pages/Massage.vue";
 import Yoga from "./components/pages/Yoga.vue";
 import Acupuncture from "./components/pages/Acupuncture.vue";
 import Contact from "./components/pages/Contact.vue";
+import MobileHeader from "./components/MobileHeader.vue";
 
 
 export const routes = [
@@ -10,5 +11,6 @@ export const routes = [
     {path: '/massage', component: Massage},
     {path: '/yoga', component: Yoga},
     {path: '/acupuncture', component: Acupuncture},
-    {path: '/contact', component: Contact}
+    {path: '/contact', component: Contact},
+    {path: '/mobile-header', component: MobileHeader}
 ]
