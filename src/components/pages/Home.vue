@@ -11,7 +11,8 @@
       </div>
       <div class="nurture-info-button">
         <h3>
-          <img src="https://img.icons8.com/ios-glyphs/30/000000/group.png" />
+          <!-- <img src="https://img.icons8.com/ios-glyphs/30/000000/group.png" /> -->
+          <i class="fas fa-users fa-2x"></i>
         </h3>
         <h3>Meet Our Healing Practioners</h3>
       </div>
@@ -146,10 +147,18 @@
 }
 
 .nurture-info-button {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
   background-color: #9bc444;
   padding: 20px 30px;
   border: black solid 0.5px;
   border-radius: 4px;
+  height: 110px;
+}
+
+.fa-users {
+  padding-right: 5px;
 }
 
 .nurture-wellness-home-panel {
