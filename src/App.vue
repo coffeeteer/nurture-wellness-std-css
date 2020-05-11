@@ -56,4 +56,15 @@ export default {
 li {
   list-style: none;
 }
+
+.nurture-font-family {
+  /* font-family: "Alice", sans-serif; */
+  font-family: "Indie Flower", cursive;
+  /* font-family: "Kalam", cursive; */
+  /* font-family: "Pangolin", cursive; */
+  /* font-family: "Patrick Hand SC", cursive; */
+  /* font-family: "Permanent Marker", cursive; */
+  /* font-family: "Aladin", cursive; */
+  /* font-family: "Waiting for the Sunrise", cursive; */
+}
 </style>

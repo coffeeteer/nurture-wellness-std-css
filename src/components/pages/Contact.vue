@@ -4,7 +4,7 @@
     <div class="contact-hero">
       <div class="text-container">
         <div class="hero-text">
-          <h2>Join Us and Nurture Yourself Today!</h2>
+          <h2 class="nurture-font-family">Join Us and Nurture Yourself Today!</h2>
           <p>
             We look forwarding to hearing from you! Please give us a call, send us an email or use the form at
             the bottom of the page to send us a message.
@@ -51,8 +51,8 @@
           <div
             class="fb-page"
             data-href="https://www.facebook.com/NurtureWellnessStudio"
-            data-tabs="timeline"
-            data-width="600"
+            data-tabs="timeline,events"
+            data-width="500"
             data-height="450"
             data-small-header="false"
             data-adapt-container-width="true"
@@ -68,7 +68,7 @@
           </div>
         </div>
         <div class="text">
-          <h3>Directions</h3>
+          <h3 class="nurture-font-family">Directions</h3>
           <p>Directions From Hwy 74W, take exit 67 into Bryson City. Before you come to the first stop light you will be taking a right on Academy St., which is the street right after Bojangles (sometimes there is no street sign, but there IS a pointer sign to the public library). Soon after your right turn on Academy St, you'll see our Nurture Wellness sign and a stone house on your right. Park behind the building and please use the front door :)</p>
         </div>
       </div>
@@ -129,6 +129,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-wrap: wrap;
 }
 
 .info-div {
@@ -166,7 +167,6 @@ address span {
 }
 
 .text h3 {
-  font-family: 'Alice', sans-serif; 
   font-size: 1.4rem;
   padding-bottom: 2rem;
 }
@@ -178,7 +178,6 @@ address span {
 
 .contact-container {
   background: url('../../assets/morning-fog.jpg') center top no-repeat;
-  /* height: 100%; */
   background-size: cover;
 }
 

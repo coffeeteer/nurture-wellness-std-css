@@ -2,7 +2,7 @@
   <div>
     <div class="nav-banner">
       <div>
-        <h1 class="nurture-title title">Nurture<br>Wellness<br>Studio</h1>
+        <h1 class="nurture-title title nurture-font-family">Nurture<br>Wellness<br>Studio</h1>
       </div>
       <div class="business-div">
         <div class="business-info">
@@ -22,7 +22,7 @@
     </div>
     <nav>
       <div class="nav-top">
-        <div class="logo title">
+        <div class="logo title nurture-font-family">
           <img src="https://img.icons8.com/ios-filled/50/000000/lotus.png" />
           <span>Nurture Wellness Studio</span>
         </div>
@@ -127,16 +127,6 @@ a.phone:hover {
   margin-left: 7px;
 }
 
-.title {
-  font-family: "Alice", serif;
-}
-
-body {
-  margin: 0;
-  font-family: Helvetica, sans-serif;
-  background-color: #f4f4f4;
-}
-
 a {
   color: #000;
 }
@@ -159,7 +149,6 @@ div.logo.title {
 .title span {
     font-size: 1.8rem;
     padding-left: .5rem;
-    font-family: 'Alice', sans-serif;
 }
 
 .nav-menu {
@@ -195,11 +184,7 @@ li .vue-anchor:hover {
   background-color: black;
   color: white;
   text-shadow: 1px 1px 2px white;
-  /* border: solid 1px transparent; */
-  /* border-radius: 25px; */
 }
-
-
 
 li .vue-anchor:active {
   background-color: #292222;

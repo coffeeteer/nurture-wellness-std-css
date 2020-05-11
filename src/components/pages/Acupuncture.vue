@@ -62,7 +62,7 @@
 
 .acu-text-div > h2, h3 {
   text-align: center;
-  font-family: 'Alice', sans-serif;
+  font-family: "Waiting for the Sunrise", cursive;
   font-size: 1.3rem;
 }
 

@@ -3,8 +3,8 @@
     <div class="massage-bryson">
       <div class="massage-image">
         <div class="mass-text-div">
-          <h2 class="mass-text">Massage Therapy in Bryson City</h2>
-          <h3 class="mass-text">Nurture Wellness</h3>
+          <h2 class="mass-text nurture-font-family">Massage Therapy in Bryson City</h2>
+          <h3 class="mass-text nurture-font-family">Nurture Wellness</h3>
           <p
             class="mass-text"
           >Massage is an excellent way to take better care of your body, mind, and soul. Give the gift of a massage to a friend or loved one, or take this important time for yourself.</p>
@@ -33,9 +33,6 @@
 <style scoped>
 .massage-bryson {
   height:500px;
-  /* background-image: url("../../assets/white-waves.png"); */
-  /* Background pattern from Toptal Subtle Patterns */
-  /* border-bottom: 1px solid black; */
   background: linear-gradient(
       rgba(204, 204, 204, 0.8),
       rgba(204, 204, 204, 0.9)
@@ -45,15 +42,6 @@
 }
 
 .massage-image {
-  /* background-color: rgba(0,0,0, 0.4); */
-  /* background: rgba(0,0,0, 0.4), url("../../assets/massage-landscape.png"); */
-  /* background: linear-gradient(
-      rgba(204, 204, 204, 0.4),
-      rgba(204, 204, 204, 0.8)
-    ),
-    url("../../assets/massage-landscape.png") left center no-repeat; */
-  /* background-image: url("../../assets/massage-landscape.png"); */
-
   background-size: contain;
   background-repeat: no-repeat;
   width: 1000px;
@@ -78,7 +66,6 @@
 
 .mass-text-div > h2,
 h3 {
-  font-family: "Alice", sans-serif;
   font-size: 1.5rem;
 }
 

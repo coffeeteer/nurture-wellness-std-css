@@ -4,8 +4,8 @@
     <div class="yoga-bryson">
       <div class="yoga-vista-image">
         <div class="yoga-text-div">
-          <h2 class="yoga-text">Massage Therapy in Bryson City</h2>
-          <h3 class="yoga-text">Nurture Wellness</h3>
+          <h2 class="yoga-text nurture-font-family">Massage Therapy in Bryson City</h2>
+          <h3 class="yoga-text nurture-font-family">Nurture Wellness</h3>
           <p class="yoga-text">
             Yoga is an art, exercise, and way of life that increases flexibility, strength, and protects against
             injury. It promotes longevity as the exercises can balance ones metabolism, and improves the cardiovacular
@@ -18,11 +18,11 @@
     <!-- Yoga Bryson Hero end  -->
 
     <!-- Hatha Yoga -->
-    <h3 class="yoga-title green">Hatha Yoga</h3>
+    <h3 class="yoga-title green nurture-font-family">Hatha Yoga</h3>
     <div class="page-content">
       <!-- Yoga Pricing -->
       <div class="yoga-pricing">
-        <h3 class="green">Pricing</h3>
+        <h3 class="green nurture-font-family">Pricing</h3>
         <ul>
           <li>$10 walk in</li>
           <li>$45 for a five-class pass (passes are non transferable)</li>
@@ -37,7 +37,7 @@
           <div class="hatha-card">
             <!-- Hatha 1 -->
             <h4>
-              <span class="bold sm-title">Hatha Beginnings</span>
+              <span class="bold sm-title nurture-font-family">Hatha Beginnings</span>
             </h4>
             <h4>Saturdays: 9am to 10am</h4>
             <p>
@@ -49,7 +49,7 @@
           <div class="hatha-card">
             <!-- Hatha 2 -->
             <h4>
-              <span class="bold sm-title">Hatha Relaxed</span>
+              <span class="bold sm-title nurture-font-family">Hatha Relaxed</span>
             </h4>
             <h4>Tuesdays and Fridays: 9am to 10am</h4>
             <p>
@@ -63,7 +63,7 @@
           <div class="hatha-card">
             <!-- Hatha 3 -->
             <h4>
-              <span class="bold sm-title">Hatha Fundamentals</span>
+              <span class="bold sm-title nurture-font-family">Hatha Fundamentals</span>
             </h4>
             <h4>Mondays: 5:00pm to 6:00pm</h4>
             <p>
@@ -76,7 +76,7 @@
           <div class="hatha-card">
             <!-- Hatha 4 -->
             <h4>
-              <span class="bold sm-title">Hatha for Me</span>
+              <span class="bold sm-title nurture-font-family">Hatha for Me</span>
             </h4>
             <h4>Call us to schedule a session!</h4>
 
@@ -94,7 +94,7 @@
     <hr class="hr-style" />
 
     <div class="etiquette">
-      <h3 class="green">Yoga Studio Etiquette</h3>
+      <h3 class="green nurture-font-family">Yoga Studio Etiquette</h3>
       <p>
         The yoga studio is a special kind of gathering place. In the spirit of community, and respect for each other, remember yoga is
         a practice in awareness:
@@ -146,7 +146,7 @@
           <!-- <font-awesome-icon icon="om" class="om"></font-awesome-icon> -->
           <i class="fas fa-om fa-2x"></i>
         </h3>
-        <h3>Hatha Yoga - Come Home To Your Body</h3>
+        <h3 class="nurture-font-family">Hatha Yoga - Come Home To Your Body</h3>
         <p>
           What most of us know as yoga is the practice of physical postures, or "asanas", that comprise one aspect of the philosophical
           system of yoga. These postures are designed to purify and open the many channels of our body, especially the spine, so that energy
@@ -191,9 +191,7 @@
 .yoga-text-div {
   text-align: center;
   width: 700px;
-  /* background-image: url("../../assets/white-waves.png");  */
   padding: 1rem 1.5rem;
-  /* Background pattern from Toptal Subtle Patterns */
   background-color: rgba(248, 248, 255, 0.3);
   border: transparent;
   border-radius: 5px;
@@ -201,7 +199,6 @@
 
 .yoga-text-div > h2,
 h3 {
-  font-family: "Alice", sans-serif;
   font-size: 2rem;
   margin-bottom: 1rem;
 }
@@ -210,7 +207,6 @@ h3 {
 /* cards */
 .yoga-title {
   text-align: center;
-  font-family: "Alice", sans-serif;
   padding: 1rem 0;
 }
 
@@ -234,7 +230,6 @@ h3 {
 }
 
 .sm-title {
-  font-family: "Alice", sans-serif;
   font-size: 1.4rem;
 }
 
@@ -245,7 +240,7 @@ h3 {
 
 .hatha-card > p::first-letter {
   font-weight: bold;
-  font-family: "Alice", sans-serif;
+  font-family: "Indie Flower", cursive;
 }
 
 .yoga-pricing {
@@ -295,7 +290,7 @@ h3 {
 
 .etiquette li::first-letter {
   font-weight: bold;
-  font-family: "Alice", sans-serif;
+  font-family: "Indie Flower", cursive;
 }
 
 .hatha-container {

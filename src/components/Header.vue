@@ -3,7 +3,7 @@
     <!-- <h1>Hello  <img src="https://img.icons8.com/ios-filled/50/000000/lotus.png"/></h1> -->
     <div class="nav-banner">
       <div>
-        <h1 class="nurture-title title">Nurture Wellness Studio</h1>
+        <h1 class="nurture-title title nurture-font-family">Nurture Wellness Studio</h1>
       </div>
       <div class="business-div">
         <div class="business-info">
@@ -106,19 +106,9 @@ a.phone:hover {
   margin-left: 1rem;
 }
 
-.title {
-  font-family: "Alice", serif;
-}
-
 .router-link-active {
   background-color: #404040;
   color: #f5f5f5;
-}
-
-body {
-  margin: 0;
-  font-family: Helvetica, sans-serif;
-  background-color: #f4f4f4;
 }
 
 a {

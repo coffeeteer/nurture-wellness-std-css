@@ -11,7 +11,6 @@
       </div>
       <div class="nurture-info-button">
         <h3>
-          <!-- <img src="https://img.icons8.com/ios-glyphs/30/000000/group.png" /> -->
           <i class="fas fa-users fa-2x"></i>
         </h3>
         <h3>Meet Our Healing Practioners</h3>
@@ -25,19 +24,18 @@
         <h2>
           <img src="https://img.icons8.com/ios-filled/50/000000/lotus.png" />
         </h2>
-        <h2>Welcome to Nurture Wellness Studio</h2>
+        <h2 class="nurture-font-family">Welcome to Nurture Wellness Studio</h2>
         <p>Located in Bryson City, NC and dedicated to serving the people and visitors to our community and surrounding area; this beautiful space offers private and group yoga classes, many styles of massage, acupuncture, and specialty workshops.</p>
       </div>
     </div>
     <!-- Info Panel End -->
 
-    <h2 class="h1-title green">Wellness Services</h2>
+    <h2 class="h1-title green nurture-font-family">Wellness Services</h2>
     <!-- cards -->
     <div class="cards-container">
       <!-- massage card -->
       <div class="card massage">
         <div class="massage-img"></div>
-        <!-- <img src="../../assets/deepmassage-crop.jpg" class="massage-image" alt=""> -->
         <h4>Massage</h4>
         <p>
           Massage Therapist,
@@ -49,7 +47,6 @@
       <!-- yoga card -->
       <div class="card yoga">
         <div class="yoga-img"></div>
-        <!-- <img src="../../assets/yoga-group.jpg" class="yoga-image" alt=""> -->
         <h4>Yoga</h4>
         <p>
           <span class="bold">Jackie Beecher & Fred Crawford</span> lead group and private Hatha Yoga for all abilities.
@@ -60,7 +57,6 @@
       <!-- Acupuncture  -->
       <div class="card acupuncture">
         <div class="acu-img"></div>
-        <!-- <img src="../../assets/chris-basset-crop.jpg" class="acupuncture-image" alt=""> -->
         <h4>Acupuncture</h4>
         <p>
           <span class="bold">Chris Bassett</span>, L.Ac., brings his expertise in acupuncture, and Chinese herbs to the Nurture Wellness Studio.
@@ -73,7 +69,7 @@
     <!-- background panel -->
     <div class="background-show">
       <div class="nurture-experience-blurb">
-        <h3>NURTURE WELLNESS TODAY</h3>
+        <h3 class="nurture-font-family">NURTURE WELLNESS TODAY</h3>
         <p class="green">Experience what Nurture Wellness Studio has to Offer</p>
         <p>Yoga, Massage Therapy, and Acupuncture</p>
       </div>
@@ -81,7 +77,7 @@
     <!-- background panel end -->
 
     <!-- Meet our practioners -->
-    <h3 class="healing-prac-h3 green">Meet Our Healing Practioners</h3>
+    <h3 class="healing-prac-h3 green nurture-font-family">Meet Our Healing Practioners</h3>
     <div class="healing-practioners">
       <div class="practioner-card">
         <!-- Jackie Beecher -->
@@ -102,7 +98,6 @@
       <div class="practioner-card">
         <!-- Chris Bassett -->
         <div class="chris-bassett-img"></div>
-        <!-- <img src="../../assets/yoga-group.jpg" class="yoga-image" alt=""> -->
         <h4>Chris Bassett, L.Ac.</h4>
         <p>
           <span class="bold">Chris</span> brings his expertise in acupuncture, and Chinese herbs to the Nurture Wellness Studio.
@@ -129,6 +124,7 @@
   align-items: flex-start;
   justify-content: space-evenly;
   margin-top: -40px;
+  flex-wrap: wrap;
 }
 
 .nurture-info-panel {
@@ -184,7 +180,6 @@
 .panel-div h2 {
   font-size: 1.7rem;
   padding-bottom: 0.5rem;
-  font-family: "Alice", sans-serif;
 }
 
 .panel-div p {
@@ -194,7 +189,6 @@
 .h1-title {
   text-align: center;
   padding-bottom: 1rem;
-  font-family: "Alice", sans-serif;
   padding-top: 1rem;
   font-size: 3rem;
 }
@@ -202,9 +196,9 @@
 .cards-container {
   display: flex;
   justify-content: space-evenly;
-  /* height: 450px; */
   width: 85%;
   margin: auto;
+  flex-wrap: wrap;
 }
 
 .card {
@@ -300,7 +294,6 @@
 
 .nurture-experience-blurb h3 {
   font-size: 1.5rem;
-  font-family: "Alice", sans-serif;
 }
 
 .nurture-experience-blurb p {
@@ -310,7 +303,6 @@
 
 .healing-prac-h3 {
   text-align: center;
-  font-family: 'Alice', sans-serif;
   font-size: 2rem;
   margin: 1rem;
 }
@@ -320,6 +312,7 @@
   justify-content: space-evenly;
   text-align: center;
   margin-top: 20px;
+  flex-wrap: wrap;
 }
 
 .practioner-card {
@@ -351,6 +344,32 @@ div.chris-bassett-img {
   width: 225px;
   background-repeat: no-repeat;
   background-size: cover;
+}
+
+@media screen and (max-width: 1000px) {
+  .nurture-blurbs {
+    margin: 0;
+    background-color: #eee;
+  }
+
+  .panel-div {
+    width: 80%;
+  }
+
+  .background-show {
+    background: linear-gradient(
+        rgba(204, 204, 204, 0.6),
+        rgba(238, 238, 238, 0.4)
+      ),
+      url("../../assets/random-yoga-meditation.jpg") left top no-repeat;
+    background-size: cover;
+  }
+}
+
+@media screen and (max-width: 625px) {
+  div.panel-div h2 img {
+    padding-top: 40px;
+  }
 }
 </style>
  
