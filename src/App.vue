@@ -24,6 +24,13 @@ export default {
       this.mobileView = window.innerWidth <= 800;
     }
   },
+  watch: {
+    mobileView(){
+      if (this.mobileView === true){
+        this.handleView();
+      }
+    }
+  },
   components: {
     appHeader: Header,
     appMobileHeader: MobileHeader,
