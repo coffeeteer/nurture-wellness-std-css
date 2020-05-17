@@ -1,6 +1,5 @@
 <template>
   <div>
-    <!-- <h1>Hello  <img src="https://img.icons8.com/ios-filled/50/000000/lotus.png"/></h1> -->
     <div class="nav-banner">
       <div>
         <h1 class="nurture-title title nurture-font-family">Nurture Wellness Studio</h1>
@@ -9,16 +8,14 @@
         <div class="business-info">
           <ul>
             <li><a href="tel:1-828-400-9616" class="phone" target="_blank">Phone: 828-400-9616</a></li>
-            <li><a href="mailto:jackiebeecher@gmail.com" target="_blank">jackiebeecher@gmail.com</a></li>
+            <li><a href="mailto:jackiebeecher50@gmail.com" target="_blank">jackiebeecher50@gmail.com</a></li>
             <li>Bryson City, NC</li>
           </ul>
         </div>
         <div class="paper-plane">
-          <h1>
-            <!-- <img src="https://img.icons8.com/ios/50/000000/sent.png" /> -->
+          <h1>  
             <a href="mailto:jackiebeecher@gmail.com" target="_blank"><i class="fas fa-paper-plane fa-3x"></i></a>
           </h1>
-          <!-- <a href="https://icons8.com/icon/2837/sent">Sent icon by Icons8</a>-->
         </div>
       </div>
     </div>

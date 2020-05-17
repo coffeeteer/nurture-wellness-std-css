@@ -69,7 +69,7 @@
         </div>
         <div class="text">
           <h3 class="nurture-font-family">Directions</h3>
-          <p>Directions From Hwy 74W, take exit 67 into Bryson City. Before you come to the first stop light you will be taking a right on Academy St., which is the street right after Bojangles (sometimes there is no street sign, but there IS a pointer sign to the public library). Soon after your right turn on Academy St, you'll see our Nurture Wellness sign and a stone house on your right. Park behind the building and please use the front door :)</p>
+          <p>Directions From Hwy 74W, take exit 67 into Bryson City. Before you come to the first stop light you will be taking a right on Academy St., which is the street right after Bojangles (sometimes there is no street sign, but there IS a pointer sign to the public library). Soon after your right turn on Academy St, you'll see our Nurture Wellness sign and a stone house on your right. Park behind the building and enter through the backdoor :)</p>
         </div>
       </div>
     </div>

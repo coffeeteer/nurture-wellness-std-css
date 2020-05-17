@@ -5,10 +5,10 @@
       <div class="acu-image">
         <div class="container">
           <div class="acu-text-div">
-            <h2 class="acupuncture-text">Acupuncture in Bryson City</h2>
-            <h3 class="acupuncture-text">Nurture Wellness</h3>
+            <h2 class="acupuncture-text nurture-font-family">Acupuncture in Bryson City</h2>
+            <h3 class="acupuncture-text nurture-font-family">Nurture Wellness</h3>
             <p class="acupuncture-text">
-              Acupuncture is an ancient art that benefits include ruduced pain and tension, improved immunity,
+              Acupuncture is an ancient healing art. Benefits include reduced pain and tension, improved immunity,
               and digestion.
             </p>
           </div>
@@ -62,7 +62,7 @@
 
 .acu-text-div > h2, h3 {
   text-align: center;
-  font-family: "Waiting for the Sunrise", cursive;
+  /* font-family: "Waiting for the Sunrise", cursive; */
   font-size: 1.3rem;
 }
 

@@ -70,7 +70,7 @@
     <div class="background-show">
       <div class="nurture-experience-blurb">
         <h3 class="nurture-font-family">NURTURE WELLNESS TODAY</h3>
-        <p class="green">Experience what Nurture Wellness Studio has to Offer</p>
+        <p>Experience what Nurture Wellness Studio has to Offer</p>
         <p>Yoga, Massage Therapy, and Acupuncture</p>
       </div>
     </div>
@@ -221,6 +221,8 @@
 
 .card p {
   font-size: 0.8rem;
+  text-align: left;
+  padding: 0 5px 0 50px;
 }
 
 .massage-img {
@@ -329,6 +331,11 @@
   padding: 0.3rem;
 }
 
+.practioner-card p {
+  padding-left: 50px;
+  text-align: left;
+}
+
 .jackie-beecher-img {
   background: url("../../assets/Jackie1.jpg") no-repeat;
 }
@@ -367,8 +374,57 @@ div.chris-bassett-img {
 }
 
 @media screen and (max-width: 625px) {
+   .home-banner {
+    height: 270px;
+  }
+  
   div.panel-div h2 img {
     padding-top: 40px;
+  }
+}
+
+@media screen and (max-width: 580px) {
+  .home-banner {
+    height: 200px;
+  }
+
+  .nurture-info-panel {
+    width: 100%;
+    padding: 10px;
+  }
+
+  .nurture-info-panel h3,  .nurture-info-button h3{
+    font-size: .8rem;
+  }
+
+  .nurture-experience-blurb h3,
+  .nurture-experience-blurb p {
+    padding-top: 1rem;
+    margin: 0;
+    font-size: 1rem;
+  }
+
+  .nurture-blurbs {
+    margin-bottom: 70px;
+  }
+
+  .panel-div p {
+    font-size: 1rem;
+  }
+}
+
+@media screen and (max-width: 350px) {
+  .home-banner {
+    height: 155px;
+    background-size: contain;
+  }
+
+  .nurture-blurbs {
+    padding-bottom: 70px;
+  }
+
+  .panel-div p {
+    font-size: 0.8rem;
   }
 }
 </style>

@@ -21,7 +21,7 @@
         <ul>
           <li>NC Licensed  Massage and Bodywork Therapist  #1306 </li>
           <li>Board Certified in Therapeutic Massage and Bodywork #157107 </li>
-          <li>(Also known as Pound d'Flesh:  Jackie is the official Massage Therapist of   <a href="http://www.smokymountainrollergirls.com/" target="_blank">The Smoky Mountain Roller Girls.</a>)</li>
+          <li>(Also known as Pound d'Flesh:  Jackie is the former Massage Therapist of   <a href="http://www.smokymountainrollergirls.com/" target="_blank">The Smoky Mountain Roller Girls.</a>)</li>
       </ul>
         <p>Call Jackie @ <a href="tel:1-828-400-9616">828-400-9616</a> to make an appointment.</p>
       </div>
@@ -42,8 +42,6 @@
 }
 
 .massage-image {
-  background-size: contain;
-  background-repeat: no-repeat;
   width: 1000px;
   height: 390px;
   display: flex;
@@ -56,9 +54,7 @@
 .mass-text-div {
   text-align: center;
   width: 700px;
-  /* background-image: url("../../assets/white-waves.png");  */
   padding: 1rem 1.5rem;
-  /* Background pattern from Toptal Subtle Patterns */
   background-color: rgba(248,248,255, 0.3);
   border: transparent;
   border-radius: 5px;
@@ -97,5 +93,20 @@ h3 {
   /* font-size: 1.1rem; */
   font-weight: bold;
   padding: 3px;
+}
+
+@media screen and (max-width: 650px) {
+  .massage-bryson {
+    height: 350px;
+  }
+
+  .massage-image {
+    width: 0;
+  }
+
+  .mass-text-div {
+    width: 450px;
+    padding: 1rem;
+  }
 }
 </style>

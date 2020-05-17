@@ -4,7 +4,7 @@
     <div class="yoga-bryson">
       <div class="yoga-vista-image">
         <div class="yoga-text-div">
-          <h2 class="yoga-text nurture-font-family">Massage Therapy in Bryson City</h2>
+          <h2 class="yoga-text nurture-font-family">Yoga in Bryson City</h2>
           <h3 class="yoga-text nurture-font-family">Nurture Wellness</h3>
           <p class="yoga-text">
             Yoga is an art, exercise, and way of life that increases flexibility, strength, and protects against
